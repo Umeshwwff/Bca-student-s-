@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me Form</title>
+    <meta property="og:image" content="https://imgur.com/a/Dks3PPO">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="description" content="Find complete BCA study materials including notes, MCQs, objective questions, modules, previous year papers, and exam preparation resources for all semesters.">
+    <meta name="keywords" content="BCA,ANUKASIF, TECHNAP BCA, BCA study materials, BCA notes, BCA MCQs, BCA objective questions, BCA modules, Bachelor of Computer Applications, BCA semester 1, BCA semester 2, BCA semester 3, BCA semester 4, BCA semester 5, BCA semester 6, BCA previous year papers, BCA exam preparation, BCA online study resources, BCA solved papers, BCA tutorials, BCA practice questions">
+    <meta name="author" content="technap.netlify.app">
+
+    <link rel="icon" href="images/dp.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e3f2fd;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #0d47a1;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            font-size: 1.8rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        .section {
+            background-color: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            display: block;
+            margin: 0 auto;
+            /* border: 2px solid black; */
+            /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); */
+            
+            border-radius: 50%;
+            background: #e0e0e0;
+            box-shadow:  5px 5px 10px #636363, -5px -5px 10px #ffffff;
+            transition: box-shadow 0.3s ease, border-radius 0.3s ease;
+        }
+
+        .profile img:hover {
+            box-shadow: 0 8px 16px rgba(232, 5, 5, 0.4);
+            width: 600px;
+            height: 600px;
+        }
+
+        .content {
+            text-align: center;
+            margin-top: 1.5rem;
+            text-align: justify;
+        }
+
+        .content h2 {
+            color: #0d47a1;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            text-align: left;
+            color: #0d47a1;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .contact-icons img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: box-shadow 0.3s ease, border-radius 0.3s ease;
+        }
+
+        .contact-icons img:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+            border-radius: 20%;
+        }
+
+        .contact-form {
+            margin-top: 2rem;
+            text-align: center;
+            width: 100%;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            max-width: 500px;
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact-form button {
+            padding: 0.75rem 2rem;
+            background-color: #0d47a1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+
+        .contact-form button:hover {
+            background-color: #1565c0;
+        }
+
+        .thank-you-message {
+            display: none;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .thank-you-message h3 {
+            color: #0d47a1;
+        }
+
+        .thank-you-message a {
+            text-decoration: none;
+            color: #0d47a1;
+            font-weight: bold;
+            margin: 0 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: .5rem 0;
+            background-color: #0d47a1;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 1rem;
+        }
+        footer p {
+            font-size: 20px;
+        }
+        footer p a{
+            text-decoration: none;
+            font-weight: bold;
+            color: red;
+        }
+
+        @media (min-width: 740px) {
+            .contact-section {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 40px 80px;
+            }
+            
+
+            .contact-section .contact-info,
+            .contact-section .contact-form {
+                flex: 1;
+                margin: 0 40px;
+            }
+
+            .contact-info {
+                max-width: 350px;
+            }
+
+            .contact-form {
+                max-width: 600px;
+            }
+
+            .contact-form form {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .contact-form input[type="text"],
+            .contact-form input[type="email"],
+            .contact-form textarea {
+                width: 100%;
+                padding: 15px;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                font-size: 18px;
+            }
+
+            .contact-form button {
+                width: 200px;
+                padding: 15px;
+                border: none;
+                border-radius: 5px;
+                background-color: #007bff;
+                color: #fff;
+                font-size: 18px;
+                cursor: pointer;
+                align-self: flex-end;
+            }
+
+            .contact-form button:hover {
+                background-color: #0056b3;
+            }
+
+            .contact-icons {
+                display: flex;
+                justify-content: flex-start;
+                gap: 20px;
+                margin-top: 20px;
+            }
+
+            .contact-icons img:hover {
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+                border-radius: 20%;
+            }
+        }
+    </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M1G8XYBMTE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M1G8XYBMTE');
+</script><meta name="google-adsense-account" content="ca-pub-3749841168689989"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3749841168689989" crossorigin="anonymous"></script></head>
+
+<body>
+    <header>
+        About Me
+    </header>
+    <div class="container">
+        <section class="section about-section" id="about-me">
+            <div class="profile">
+                <img src="pfff.png" alt="Profile Picture">
+            </div>
+            <div class="content">
+                <h2>Umesh Kumar Meghwal</h2>
+                <p>
+                
+                    <p><strong>Welcome to My BCA students</strong></p>
+
+                    <p>I'm Umesh kuamr meghwal, a dedicated and passionate coder currently pursuing my Bachelor of Computer Applications (BCA) in my 1st year at Modi institute of technology manegment. My goal is simple: to make high-quality study materials accessible to all BCA students for free. Whether you're looking for comprehensive notes, multiple-choice questions (MCQs), or both objective and subjective questions and answers, you've come to the right place.</p>
+                    
+                    <p>My love for coding drives me to constantly learn, grow, and share my knowledge. I believe that no student should ever feel unprepared or alone in their studies. That’s why I’ve created BCA  study be a reliable resource where you can find everything you need to excel in your exams and beyond.</p>
+                    
+                    <p>Together, let’s tackle every challenge, conquer every exam, and achieve our goals. Your success is just as important to me as my own. Let’s embark on this journey to ace our exams with confidence and ease!</p>
+
+                </p>
+                <p>
+                    My interest in coding drives me to continuously learn and share knowledge, making sure that no student
+                    ever has to struggle alone. Let’s ace these exams together!
+                </p>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact-me">
+            <h2>Contact Me</h2>
+            <!-- <p>If you have any questions, suggestions, or just want to connect, feel free to reach out!</p> -->
+            <p><strong>Have questions, suggestions, or simply want to connect?</strong><br>
+                I'm always here to listen! Don't hesitate to reach out—I’d love to hear from you!</p>
+                
+            <div class="contact-icons">
+                <a href="https://www.instagram.com/tech.nap" target="_blank">
+                    <img src="../images/instagram.png" alt="Instagram" id="instagram-icon">
+                </a>
+                <a href="https://wa.me/919905307119" target="_blank">
+                    <img src="../images/whatsapp.png" alt="WhatsApp" id="whatsapp-icon">
+                </a>
+                <a href="mailto:anukasif@gmail.com">
+                    <img src="../images/email.png" alt="Email" id="email-icon">
+                </a>
+                <a href="tel:+919905307119">
+                    <img src="../images/phone.png" alt="Phone" id="phone-icon">
+                </a>
+            </div>
+            <div class="contact-form">
+                <form id='contact' method='POST'>
+                <!-- Hidden field for Netlify to know the form name -->
+                <input type="hidden" name="form-name" value="contact">
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="number">Phone No:</label>
+                    <input type="number" id="number" name="PhoneNo" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="thank-you-message" id="thank-you-message">
+                <h3>Thanks for your Submission!</h3>
+                <p>You can either stay on this page or go back to <a href='/'>Homepage</a>.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; <a href="https://www.instagram.com/tech.nap/">(BCA student)</a> Developed by <a href="https://www.instagram.com/anushkasif_tription/">Umesh kumar meghwal</a></p>
+    </footer>
+    <!-- <script>
+        document.querySelector("form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            document.querySelector(".thank-you-message").style.display = "block";
+            this.style.display = "none";
+        });
+    </script> -->
+</body>
+
+</html>

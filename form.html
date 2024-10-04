@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Form </title>
+    <meta property="og:image" content="https://imgur.com/a/Dks3PPO">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="description" content="Find complete BCA study materials including notes, MCQs, objective questions, modules, previous year papers, and exam preparation resources for all semesters.">
+    <meta name="keywords" content="BCA,ANUKASIF, TECHNAP BCA, BCA study materials, BCA notes, BCA MCQs, BCA objective questions, BCA modules, Bachelor of Computer Applications, BCA semester 1, BCA semester 2, BCA semester 3, BCA semester 4, BCA semester 5, BCA semester 6, BCA previous year papers, BCA exam preparation, BCA online study resources, BCA solved papers, BCA tutorials, BCA practice questions">
+    <meta name="author" content="technap.netlify.app">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+
+        .form-group .form-error {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M1G8XYBMTE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M1G8XYBMTE');
+</script><meta name="google-adsense-account" content="ca-pub-3749841168689989"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3749841168689989" crossorigin="anonymous"></script></head>
+<body>
+
+    <div class="form-container">
+        <h2>Submit Your Details</h2>
+        <form id='myForm' method='POST'>
+            <!-- Hidden field for Netlify to know the form name -->
+            <input type="hidden" name="form-name" value="myForm">
+            
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <div id="nameError" class="form-error"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="text" id="mobile" name="mobile" required>
+                <div id="mobileError" class="form-error"></div>
+            </div>
+
+            <div class="form-group" id="stateGroup">
+                <label for="state">State (if in India):</label>
+                <input list="states" id="state" name="state">
+                <datalist id="states">
+                    <option value="Andhra Pradesh">
+                    <option value="Arunachal Pradesh">
+                    <option value="Assam">
+                    <option value="Bihar">
+                    <option value="Chhattisgarh">
+                    <option value="Goa">
+                    <option value="Gujarat">
+                    <option value="Haryana">
+                    <option value="Himachal Pradesh">
+                    <option value="Jharkhand">
+                    <option value="Karnataka">
+                    <option value="Kerala">
+                    <option value="Madhya Pradesh">
+                    <option value="Maharashtra">
+                    <option value="Manipur">
+                    <option value="Meghalaya">
+                    <option value="Mizoram">
+                    <option value="Nagaland">
+                    <option value="Odisha">
+                    <option value="Punjab">
+                    <option value="Rajasthan">
+                    <option value="Sikkim">
+                    <option value="Tamil Nadu">
+                    <option value="Telangana">
+                    <option value="Tripura">
+                    <option value="Uttar Pradesh">
+                    <option value="Uttarakhand">
+                    <option value="West Bengal">
+                    <option value="Andaman and Nicobar Islands">
+                    <option value="Chandigarh">
+                    <option value="Dadra and Nagar Haveli and Daman and Diu">
+                    <option value="Delhi">
+                    <option value="Lakshadweep">
+                    <option value="Puducherry">
+                </datalist>
+                <div id="stateError" class="form-error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" list="countries" required>
+                <datalist id="countries">
+                    <option value="India">
+                    <option value="United States">
+                    <option value="United Kingdom">
+                    <option value="Australia">
+                    <option value="Canada">
+                    <option value="Germany">
+                    <option value="France">
+                    <!-- Add more countries as needed -->
+                </datalist>
+                <div id="countryError" class="form-error"></div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const countryInput = document.getElementById('country');
+        const stateGroup = document.getElementById('stateGroup');
+    
+        countryInput.addEventListener('input', function() {
+            if (this.value.toLowerCase() === 'india') {
+                stateGroup.style.display = 'block';
+            } else {
+                stateGroup.style.display = 'none';
+            }
+        });
+    
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+    
+            const name = document.getElementById('name').value;
+            const mobile = document.getElementById('mobile').value;
+            const country = document.getElementById('country').value;
+            const state = document.getElementById('state').value;
+    
+            let valid = true;
+    
+            // Clear previous errors
+            document.getElementById('nameError').textContent = '';
+            document.getElementById('mobileError').textContent = '';
+            document.getElementById('countryError').textContent = '';
+            document.getElementById('stateError').textContent = '';
+    
+            // Basic Validation
+            if (!/^[a-zA-Z\s]+$/.test(name)) {
+                document.getElementById('nameError').textContent = 'Name must only contain letters and spaces.';
+                valid = false;
+            }
+    
+            if (!/^\d{10}$/.test(mobile)) {
+                document.getElementById('mobileError').textContent = 'Mobile number must be 10 digits.';
+                valid = false;
+            }
+    
+            if (!country) {
+                document.getElementById('countryError').textContent = 'Please enter your country.';
+                valid = false;
+            }
+    
+            if (country.toLowerCase() === 'india' && !state) {
+                document.getElementById('stateError').textContent = 'Please select or enter a state.';
+                valid = false;
+            }
+    
+            if (valid) {
+                // Form data ko submit karne ke liye Netlify API ko manually call karo
+                fetch('/', {
+                    method: 'POST',
+                    body: new FormData(this)
+                })
+                .then(function() {
+                    // Show a thank you message and home button
+                    document.querySelector('.form-container').innerHTML = `
+                        <h2>Thank You!</h2>
+                        <p>Your form submission has been received.</p>
+                        <button id="goHome">Go to Home Page</button>
+                    `;
+    
+                    // Redirect to index.html when the button is clicked
+                    document.getElementById('goHome').addEventListener('click', function() {
+                        window.location.href = '/index.html';
+                    });
+                })
+                .catch(function(error) {
+                    console.error('Form submission failed:', error);
+                });
+            }
+        });
+    </script>
+    
+    
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+@media only screen and (min-width: 1025px) and (max-width: 1600px){
+
+    #bca{
+        font-size: 75px;
+        padding: 0;
+    }
+  
+    
+  }
+  
+  
+  @media only screen and (min-width: 901px) and (max-width: 1224px) {
+     
+     #bca{
+          color: skyblue;
+          font-size: 60px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          text-shadow: black 3px 3px 1px ;
+      }
+      
+    nav ul li a{
+          padding: 5px;
+          margin: 5px;
+      }
+     
+  
+   
+  
+  
+  }
+  
+  
+  
+  
+  
+  @media only screen and (min-width: 701px) and (max-width: 900px){
+  
+   #bca{
+        color: skyblue;
+        font-size: 38px;
+    }
+   
+  
+  
+  nav ul li a{
+        padding: 5px;
+        margin: 5px;
+    }
+    
+  
+  nav ul li:hover{
+    font-size: 17px;
+  }
+  .join{
+    display: none;
+  }
+  
+   
+  }
+  
+  @media (max-width: 700px) {
+    
+    #bca{
+        color: rgb(11, 248, 90);
+        font-size: 55px;
+    }
+    
+  
+    header img{
+      width: 200px;
+    }
+    
+    
+    nav ul li a{
+        padding: 1px;
+        margin: 1px;
+    }
+   
+    .footer-content {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center; /* Center align sections */
+    }
+  
+    .footer-section {
+        text-align: center; /* Center align text in sections */
+        padding: 10px 0; /* Adjust padding */
+    }
+  
+    .social-links {
+        justify-content: center; /* Center social icons */
+    }
+  
+    .footer-section ul li {
+        margin: 5px 0; /* Reduce space between list items */
+    }
+  
+    .footer-bottom {
+        font-size: 12px; /* Smaller font size for bottom text */
+    }
+    
+    footer img{
+      width: 40px;
+    }
+  
+  
+  
+  nav {
+    width: 100%;
+    max-height: 100px; /* Adjusted maximum height */
+    overflow-x: auto; /* Horizontal scrolling enabled */
+    white-space: nowrap; /* Prevent line wrapping */
+  }
+  
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block; /* Keep it inline for horizontal scrolling */
+  }
+  
+  nav ul li {
+    display: inline-block; /* Keep items in a single horizontal line */
+    margin: 1% 0% 1% 1%; /* Retaining your original margin settings */
+    padding: 0px 0 0 0; /* Retaining your original padding settings */
+    font-size: 18px;
+    border: 1px solid blue;
+    background-color: hsl(307, 85%, 43%);
+    border-radius: 5px;
+  }
+  
+  
+  
+  .box{
+    height: 15%;
+    display: block;
+  }
+  
+  nav ul li:hover{
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  .sem{
+    font-size: 27px;
+  }
+  .join{
+    display: block;
+    margin-left: 5%;
+    animation-duration: 10s;
+  }
+  #contact,#about{
+    font-size: 23px;
+  }
+  
+  .subject{
+    width: 250px;
+  }
+  .subject{
+    width: 100%;
+  }
+  #subject-cit{
+    width: 100%;
+  }
+  #subject-business{
+    width: 100%;
+  
+  }
+  
+  
+  @keyframes movement {
+    0%{left: 0;}
+    50%{left: 75%;}
+    100%{left: 0;}
+  }
+  
+  
+  }
